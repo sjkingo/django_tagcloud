@@ -1,6 +1,6 @@
 # django_tagcloud
 
-A simple Django templatetag for generating a [tagcloud](https://en.wikipedia.org/wiki/Tag_cloud).
+A simple Django templatetag for generating a [tagcloud](https://en.wikipedia.org/wiki/Tag_cloud). It uses a logarithmic algorithm to generate the sizes of each tag.
 
 [![PyPI](https://img.shields.io/pypi/v/django_tagcloud.svg)](https://pypi.python.org/pypi/django_tagcloud)
 
