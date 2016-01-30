@@ -12,17 +12,17 @@ Installation and usage is simple:
 
 3. In your view code, assemble a list of `(tag, weight)` tuples, for instance:
 
-```python
-tag_list = [('apple', 3), ('orange', 9), ('pear', 4), ('plum', 12)]
-```
+   ```python
+   tag_list = [('apple', 3), ('orange', 9), ('pear', 4), ('plum', 12)]
+   ```
 
 4. In a template, simply call the templatetag:
 
-```django
-{% load tagcloud %}
+   ```django
+   {% load tagcloud %}
 
-{% tagcloud tag_list %}
-```
+   {% tagcloud tag_list %}
+   ```
 
 ## Customisation
 
