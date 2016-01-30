@@ -6,14 +6,16 @@ A simple Django templatetag for generating a [tagcloud](https://en.wikipedia.org
 
 Installation and usage is simple:
 
-1. `pip install django_tagcloud`
+1. `$ pip install django_tagcloud`
 
 2. Add `tagcloud` to your `INSTALLED_APPS`
 
-3. In your view code, assemble a list of `(tag, weight)` tuples, for instance:
+3. In your view code, assemble a list of `(tag, weight)` tuples and add it to the response context, for instance:
 
    ```python
+   ...
    tag_list = [('apple', 3), ('orange', 9), ('pear', 4), ('plum', 12)]
+   return render(request, template, {'tag_list': tag_list})
    ```
 
 4. In a template, simply call the templatetag:
