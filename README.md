@@ -31,7 +31,7 @@ Installation and usage is simple:
 ## Customisation
 
 Currently the only customisation possible is specifying the minimum and maximum
-font sizes that the templatetag will use. By default these are 12px and 24px.
+font sizes that the templatetag will use. By default these are 12px and 38px.
 You can change this by passing one (or both) as arguments to the templatetag:
 
 ```django

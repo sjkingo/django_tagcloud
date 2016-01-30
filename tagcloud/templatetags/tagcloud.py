@@ -20,7 +20,7 @@ def compute_tag_sizes(tags, min_font_size, max_font_size):
     return tag_list
 
 @register.inclusion_tag('tagcloud/tagcloud.html')
-def tagcloud(tags, min_font_size=12, max_font_size=24):
+def tagcloud(tags, min_font_size=12, max_font_size=38):
     """
     Generate a tagcloud from a list of (tag, weight) tuples. For instance:
     [('apple', 3), ('orange', '4'), ('pear', 9)]
