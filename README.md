@@ -2,7 +2,7 @@
 
 A simple Django templatetag for generating a [tagcloud](https://en.wikipedia.org/wiki/Tag_cloud).
 
-[![PyPI](https://img.shields.io/pypi/v/nine.svg)](https://pypi.python.org/pypi/django_tagcloud)
+[![PyPI](https://img.shields.io/pypi/v/django_tagcloud.svg)](https://pypi.python.org/pypi/django_tagcloud)
 
 ## How to use
 
