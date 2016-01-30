@@ -1,0 +1,35 @@
+# django_tagcloud
+
+A simple Django templatetag for generating a [tagcloud](https://en.wikipedia.org/wiki/Tag_cloud).
+
+## How to use
+
+Installation and usage is simple:
+
+1. `pip install django_tagcloud`
+
+2. Add `tagcloud` to your `INSTALLED_APPS`
+
+3. In your view code, assemble a list of `(tag, weight)` tuples, for instance:
+
+```python
+tag_list = [('apple', 3), ('orange', 9), ('pear', 4), ('plum', 12)]
+```
+
+4. In a template, simply call the templatetag:
+
+```django
+{% load tagcloud %}
+
+{% tagcloud tag_list %}
+```
+
+## Customisation
+
+Currently the only customisation possible is specifying the minimum and maximum
+font sizes that the templatetag will use. By default these are 12px and 24px.
+You can change this by passing one (or both) as arguments to the templatetag:
+
+```django
+{% tagcloud tag_list 18 32 %}
+```

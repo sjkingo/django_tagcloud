@@ -1,0 +1,14 @@
+<style type="text/css">
+    ul.tagcloud {
+        list-style: none;
+    }
+    ul.tagcloud li {
+        display: inline-block;
+    }
+</style>
+
+<ul class="tagcloud">
+    {% for tag, size in tag_list %}
+        <li><span style="font-size: {{ size }}">{{ tag }}</span></li>
+    {% endfor %}
+</ul>
